@@ -168,6 +168,19 @@
           $(this).toggleClass('quick-enquiry-expanded');
         });
 
+        $('nav#menu').mmenu({
+                offCanvas: {
+                   position  : "right"
+                   //zposition : "front"
+                }
+             });
+
+        var API = $("nav#menu").data("mmenu");
+
+        $('.close-btn').bind('click', function(){
+          API.close();
+        });
+
       })(jQuery);
     </script>
   </body>
