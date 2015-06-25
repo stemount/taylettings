@@ -1,0 +1,82 @@
+// Carousel Page
+
+// @import "_carousel.less";
+
+// Home Page.
+header.homepage_introduction {
+  background: url('../img/glasgow.jpg') no-repeat top left;
+  background-size: cover;
+  min-height: 500px;
+  padding: 100px 0 0 0;
+
+  margin-top: -1px;
+
+  h1 {
+    padding: 0 100px;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+    margin: 0px;
+  }
+}
+
+
+#navbar {
+
+  float: right;
+  font-weight: bold;
+
+  a {
+    color: #808285;
+  }
+
+  li {
+    border-right: 1px solid #999;
+
+    a:hover {
+      background-color: inherit;
+    }
+  }
+
+  .dropdown.quick-enquiry {
+    a:link,
+    a:visited,
+    a:hover {
+      text-shadow: none;
+      padding: 42px 20px;
+      background: #161966;
+      color: #FFF;
+    }
+
+    .open > a {
+      background-color: inherit;
+    }
+
+    &.quick-enquiry-expanded {
+      width: 400px;
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
+
+    .dropdown-menu {
+      width: 400px;
+      min-width: 400px;
+      border: none;
+      border-radius: 0px;
+      padding: 15px;
+    }
+  }
+
+  .navigation_link {
+    margin-top: 35px;
+    font-size: 14px;
+  }
+
+  .navigation_link.last {
+    border-right: none;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+
+  }
+}
