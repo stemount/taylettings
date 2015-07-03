@@ -1,3 +1,11 @@
+<?php
+
+require './inc/common.inc.php';
+print_r(request_path());
+print_r($_GET);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +46,7 @@
           <div class="row">
           <div class="col-md-4">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#"><img src="/dist/img/logo.png" alt="TAY Lettings" /></a>
+              <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="TAY Lettings" /></a>
             </div>
 
             <a href="#menu" class="menu-but">
@@ -50,7 +58,7 @@
           </div>
 
           <div class="col-md-8">
-          <div id="navbar">
+          <div class="navbar">
             <nav id="menu">
               <div>
               <ul class="nav navbar-nav">
@@ -82,30 +90,131 @@
       <header class="homepage_introduction">
         <h1>Looking for a quality property in Glasgow, or are you a property owner and would like advice?</h1>
 
-        <div id="quick-search">
+        <form action="/search" method="get">
 
+        <div class="quick-search clearfix">
+          <h3>Quick Search</h3>
+          <div class="bedrooms option">
+            <label>Bedrooms</label>
+            <select name="bedrooms[min]">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <span>&mdash;</span>
+
+            <select name="bedrooms[max]">
+              <option value="0">Any</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="bathrooms option">
+            <label>Bathrooms</label>
+            <select name="bathrooms[min]">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <span>&mdash;</span>
+
+            <select name="bathrooms[max]">
+              <option value="0">Any</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Search" />
+          </div>
         </div>
+
+        </form>
+
       </header>
 
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-12">
+            <?php include_once('./inc/_frontpage_properties_carousel.php'); ?>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Copy -->
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-8 homepage-content">
+            <h2>Welcome to Tay Lettings</h2>
+
+            <p>Tay Letting Ltd. has rapidly become an established letting and property management brand specialising in the Greater Glasgow area. The attribute which has underpinned our swift rise to prominence in the letting sector has been our ability to turnaround property we have been handed the responsibility to let, almost never breaching a two week period.</p>
+
+            <p>Tay Letting is spearheaded by Marc Taylor and Allan Dowie, both of whom have a combined; experience, knowledge and expertise within the Glasgow area, boasting a proven track record underpinned by the personalised service they are able to provide.</p>
+          </div>
+
+          <div class="col-lg-4 homepage-content-sidebar">
+            <div class="homepage-content-sidebar--option homepage-content-sidebar--option-tenant">
+              <h3>Tenants</h3>
+              <p>A great range of properties for let in and around Glasgow.</p>
+
+              <a class="cta cta--normal" href="/tenants/">More Info</a>
+            </div>
+
+            <div class="homepage-content-sidebar--option homepage-content-sidebar--option-landlords">
+              <h3>Landlords</h3>
+              <p>Taking care to find respectable financially suitable tenants.</p>
+
+              <a class="cta cta--white" href="/tenants/">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div class="row text-center">
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Our Agents will work for you</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="cta cta--underline" href="#" role="b" href="#" role="button">Meet our team</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+          <h2>We have over 5,000 properties in Glasgow</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="cta cta--underline" href="#" role="button">See our properties</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Interested in the value of your home?</h2>
+          <p><strong>If so then feel free to book a free valuation and we’ll make sure that it’s convenient and accurate.</strong></p>
+          <p>You can contact us between 8am and 10pm Monday to Friday. Just call <a href="tel:+441413366232">0141 336 6232</a></p>
+          <p><a class="cta cta--normal" href="#" role="button">Book now</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -171,6 +280,9 @@
 
     <script src="/libraries/jQuery.mmenu/dist/js/jquery.mmenu.min.all.js" type="text/javascript"></script>
     <link href="/libraries/jQuery.mmenu/dist/css/jquery.mmenu.all.css" type="text/css" rel="stylesheet" />
+
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
     <script>
 
