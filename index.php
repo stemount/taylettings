@@ -1,5 +1,8 @@
 <?php
 
+require_once './vendor/autoload.php';
+Twig_Autoloader::register();
+
 require './inc/common.inc.php';
 print_r(request_path());
 print_r($_GET);
