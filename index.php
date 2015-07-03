@@ -168,106 +168,61 @@ print_r($_GET);
 
     </div>
 
-      <div class="container marketing frontpage-carousel-wrapper">
-          <?php include_once('./inc/_frontpage_properties_carousel.php'); ?>
-      </div>
+    <div class="container marketing frontpage-carousel-wrapper">
+        <?php include_once('./inc/_frontpage_properties_carousel.php'); ?>
+    </div>
 
       <!-- Main Copy -->
-      <div class="container marketing">
-        <div class="row">
-          <div class="col-lg-8 homepage-content">
-            <h2>Welcome to Tay Lettings</h2>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-8 homepage-content">
+          <h2>Welcome to Tay Lettings</h2>
 
-            <p>Tay Letting Ltd. has rapidly become an established letting and property management brand specialising in the Greater Glasgow area. The attribute which has underpinned our swift rise to prominence in the letting sector has been our ability to turnaround property we have been handed the responsibility to let, almost never breaching a two week period.</p>
+          <p class="lead">Tay Letting Ltd. has rapidly become an established letting and property management brand specialising in the Greater Glasgow area. The attribute which has underpinned our swift rise to prominence in the letting sector has been our ability to turnaround property we have been handed the responsibility to let, almost never breaching a two week period.</p>
 
-            <p>Tay Letting is spearheaded by Marc Taylor and Allan Dowie, both of whom have a combined; experience, knowledge and expertise within the Glasgow area, boasting a proven track record underpinned by the personalised service they are able to provide.</p>
+          <p>Tay Letting is spearheaded by Marc Taylor and Allan Dowie, both of whom have a combined; experience, knowledge and expertise within the Glasgow area, boasting a proven track record underpinned by the personalised service they are able to provide.</p>
+        </div>
+
+        <div class="col-lg-4 homepage-content-sidebar">
+          <div class="homepage-content-sidebar--option homepage-content-sidebar--option-tenants">
+            <h3>Tenants</h3>
+            <p>A great range of properties for let in and around Glasgow.</p>
+
+            <a class="cta cta--normal" href="/tenants/">More Info</a>
           </div>
 
-          <div class="col-lg-4 homepage-content-sidebar">
-            <div class="homepage-content-sidebar--option homepage-content-sidebar--option-tenant">
-              <h3>Tenants</h3>
-              <p>A great range of properties for let in and around Glasgow.</p>
+          <div class="homepage-content-sidebar--option homepage-content-sidebar--option-landlords">
+            <h3>Landlords</h3>
+            <p>Taking care to find respectable financially suitable tenants.</p>
 
-              <a class="cta cta--normal" href="/tenants/">More Info</a>
-            </div>
-
-            <div class="homepage-content-sidebar--option homepage-content-sidebar--option-landlords">
-              <h3>Landlords</h3>
-              <p>Taking care to find respectable financially suitable tenants.</p>
-
-              <a class="cta cta--white" href="/tenants/">More Info</a>
-            </div>
+            <a class="cta cta--white" href="/tenants/">More Info</a>
           </div>
         </div>
       </div>
 
       <!-- Three columns of text below the carousel -->
-      <div class="row text-center">
-        <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-4 text-center">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Our Agents will work for you</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="cta cta--underline" href="#" role="b" href="#" role="button">Meet our team</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 text-center">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>We have over 5,000 properties in Glasgow</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="cta cta--underline" href="#" role="button">See our properties</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Interested in the value of your home?</h2>
+        <div class="col-lg-4 value_of_home_block">
+          <h3>Interested in the value of your home?</h3>
           <p><strong>If so then feel free to book a free valuation and we’ll make sure that it’s convenient and accurate.</strong></p>
           <p>You can contact us between 8am and 10pm Monday to Friday. Just call <a href="tel:+441413366232">0141 336 6232</a></p>
           <p><a class="cta cta--normal" href="#" role="button">Book now</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-      <div class="view_available_properties_teaser text-center">
+      <div class="view_available_properties_teaser row text-center">
         <h3>Take a look at our available properties</h3>
         <a class="cta cta--large cta--white" href="/properties">Show Me</a>
       </div>

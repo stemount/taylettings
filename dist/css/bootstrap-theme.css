@@ -553,6 +553,14 @@ fieldset[disabled] .btn-danger.active {
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+a:link,
+a:visited {
+  font-weight: bold;
+  color: #161E66;
+}
+a:hover {
+  text-decoration: underline;
+}
 header.homepage_introduction {
   background: url('/img/glasgow.jpg') no-repeat top left;
   background-size: cover;
@@ -667,9 +675,6 @@ header.homepage_introduction h1 {
   color: #FFF;
   font-weight: bold;
 }
-.homepage-content {
-  background: green;
-}
 .cta {
   display: inline-block;
   padding: 8px 30px;
@@ -688,9 +693,18 @@ header.homepage_introduction h1 {
 .cta.cta--large {
   padding: 10px 50px;
 }
+.homepage-content-sidebar {
+  padding: 0px;
+}
+.homepage-content-sidebar .homepage-content-sidebar--option {
+  padding: 20px;
+}
 .homepage-content-sidebar .homepage-content-sidebar--option-landlords {
   background: #161E66;
   color: #FFF;
+}
+.homepage-content-sidebar .homepage-content-sidebar--option-tenants {
+  background: url("/img/tenants_block.png") no-repeat top left;
 }
 .frontpage-carousel-wrapper {
   background: #1B1B1B;
@@ -701,7 +715,7 @@ header.homepage_introduction h1 {
 .frontpage-carousel-wrapper .frontpage_properties_carousel--item img {
   float: left;
   margin: 0 20px 0 0;
-  width: 40%;
+  width: 50%;
 }
 .frontpage-carousel-wrapper .glyphicon-chevron-left {
   margin-left: -60px;
@@ -720,6 +734,13 @@ header.homepage_introduction h1 {
 .frontpage-carousel-wrapper .price {
   font-size: 18px;
   font-weight: bold;
+}
+.frontpage-carousel-wrapper .carousel-inner {
+  margin: 15px 0;
+}
+.frontpage-carousel-wrapper h2 {
+  margin: 0px;
+  padding: 5px 0;
 }
 .view_available_properties_teaser {
   background: url("/img/available_properties.png") no-repeat top left;
@@ -740,5 +761,18 @@ header.homepage_introduction h1 {
   margin-left: 0;
   padding-left: 0;
   padding-right: 0;
+}
+.carousel-control.left {
+  margin-left: 0px;
+}
+.value_of_home_block {
+  background: url("/img/city_transparent.png") no-repeat bottom center;
+}
+.value_of_home_block h3 {
+  color: #161E66;
+}
+.value_of_home_block h3,
+.value_of_home_block p {
+  width: 70%;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
