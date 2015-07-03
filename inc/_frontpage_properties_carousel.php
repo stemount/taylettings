@@ -32,22 +32,26 @@ $count = 0;
 // }
 
 function displaySlide($slide) {
+  // print_r($slide);
+  global $twig;
 
-  $loader = new Twig_Loader_Filesystem('templates');
+  // Lets make Rent a bit more human friendly than an integer.
+  $slide['Rent'] = _format_money($slide['Rent']);
 
-  $twig = new Twig_Environment($loader, array(
-    'cache' => 'cache',
-  ));
-
-  echo $twig->render('frontpage_properties_carousel--item.html', array('item' => $slide['DisplayAddress']));
-
+  echo $twig->render('frontpage_properties_carousel--item.html', $slide);
 }
 
 ?>
 
-<div class="carousel carousel--properties">
+<div class="row-fluid">
 
-  <div class="slide">
+<div class="span12">
+
+<div id="frontpage_properties_carousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner container" role="listbox">
+  <div class="item active row">
 
     <?php
 
@@ -61,7 +65,7 @@ function displaySlide($slide) {
 
   </div>
 
-  <div class="slide">
+  <div class="item row">
 
     <?php
 
@@ -75,7 +79,7 @@ function displaySlide($slide) {
 
   </div>
 
-  <div class="slide">
+  <div class="item row">
 
     <?php
 
@@ -88,5 +92,9 @@ function displaySlide($slide) {
     ?>
 
   </div>
+  </div>
 
+</div>
+
+</div>
 </div>

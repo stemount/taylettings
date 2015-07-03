@@ -1,7 +1,7 @@
 <?php
 
 // Thanks D7.
-function request_path() {
+function _request_path() {
   static $path;
 
   if (isset($path)) {
@@ -39,4 +39,35 @@ function request_path() {
   $path = trim($path, '/');
 
   return $path;
+}
+
+function _get_request_page_vars() {
+  $request_uri = _request_path();
+
+  // return parts of URI split by / e.g. /properties/ID43123
+  return explode('/', $request_uri);
+}
+
+$loader = new Twig_Loader_Filesystem('templates');
+
+global $twig;
+
+$twig = new Twig_Environment($loader, array(
+  'cache' => false,
+));
+
+// Thanks https://php.net/manual/en/function.money-format.php#98783.
+function _format_money($number, $fractional=false) {
+  if ($fractional) {
+      $number = sprintf('%.2f', $number);
+  }
+  while (true) {
+      $replaced = preg_replace('/(-?\d+)(\d\d\d)/', '$1,$2', $number);
+      if ($replaced != $number) {
+          $number = $replaced;
+      } else {
+          break;
+      }
+  }
+  return $number;
 }

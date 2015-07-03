@@ -4,7 +4,8 @@ require_once './vendor/autoload.php';
 Twig_Autoloader::register();
 
 require './inc/common.inc.php';
-print_r(request_path());
+print_r(_request_path());
+print_r(_get_request_page_vars());
 print_r($_GET);
 
 ?>
@@ -90,8 +91,10 @@ print_r($_GET);
 
     <div class="container marketing">
 
+    <div class="row">
+
       <header class="homepage_introduction">
-        <h1>Looking for a quality property in Glasgow, or are you a property owner and would like advice?</h1>
+        <h1 class="text-center">Looking for a quality property in Glasgow, or are you a property owner and would like advice?</h1>
 
         <form action="/search" method="get">
 
@@ -161,12 +164,12 @@ print_r($_GET);
 
       </header>
 
-      <div class="container marketing">
-        <div class="row">
-          <div class="col-lg-12">
-            <?php include_once('./inc/_frontpage_properties_carousel.php'); ?>
-          </div>
-        </div>
+    </div>
+
+    </div>
+
+      <div class="container marketing frontpage-carousel-wrapper">
+          <?php include_once('./inc/_frontpage_properties_carousel.php'); ?>
       </div>
 
       <!-- Main Copy -->
@@ -264,11 +267,23 @@ print_r($_GET);
 
       <!-- /END THE FEATURETTES -->
 
+      <div class="view_available_properties_teaser text-center">
+        <h3>Take a look at our available properties</h3>
+        <a class="cta cta--large cta--white" href="/properties">Show Me</a>
+      </div>
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <footer class="row">
+        <div class="col-md-8">
+          <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="TAY Lettings" /></a>
+        </div>
+        <div class="col-md-4">
+          <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          <p>Tay Letting Limited Copyright © 2009 - 2015</p>
+          <p>Company Number SC363881
+          <p>Telephone <a href="+441413366232">0141 336 6232</a></p>
+          <p>Energised by Maroculous IT Services</p>
+        </div>
       </footer>
 
     </div><!-- /.container -->

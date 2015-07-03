@@ -557,14 +557,14 @@ header.homepage_introduction {
   background: url('/img/glasgow.jpg') no-repeat top left;
   background-size: cover;
   min-height: 500px;
-  padding: 100px 0 0 0;
+  padding: 100px 0 60px 0;
   margin-top: -1px;
 }
 header.homepage_introduction h1 {
   padding: 0 100px;
   color: #FFF;
   text-shadow: 2px 2px 2px #000;
-  margin: 0px 0px 240px 0;
+  margin: 0px 0px 380px 0;
 }
 .navbar {
   float: right;
@@ -685,8 +685,60 @@ header.homepage_introduction h1 {
 .cta.cta--underline {
   border-bottom: 1px solid #333A78;
 }
+.cta.cta--large {
+  padding: 10px 50px;
+}
 .homepage-content-sidebar .homepage-content-sidebar--option-landlords {
   background: #161E66;
   color: #FFF;
+}
+.frontpage-carousel-wrapper {
+  background: #1B1B1B;
+  border-top: 1px solid #636363;
+  color: #FFF;
+  margin-top: -15px;
+}
+.frontpage-carousel-wrapper .frontpage_properties_carousel--item img {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 40%;
+}
+.frontpage-carousel-wrapper .glyphicon-chevron-left {
+  margin-left: -60px;
+}
+.frontpage-carousel-wrapper .glyphicon-chevron-right {
+  margin-right: -60px;
+}
+.frontpage-carousel-wrapper .availability {
+  font-style: italic;
+  color: #A477C7;
+  font-size: 12px;
+}
+.frontpage-carousel-wrapper .address {
+  font-size: 16px;
+}
+.frontpage-carousel-wrapper .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.view_available_properties_teaser {
+  background: url("/img/available_properties.png") no-repeat top left;
+  padding: 80px;
+}
+.view_available_properties_teaser h3 {
+  color: #FFF;
+  margin: 0 30px 0 0;
+  text-shadow: 2px 2px 2px #000;
+}
+.view_available_properties_teaser h3,
+.view_available_properties_teaser a {
+  font-size: 24px;
+  display: inline;
+}
+.nogutter {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */

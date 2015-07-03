@@ -1,1 +1,10 @@
-Hello {{ item }}
+<div class="frontpage_properties_carousel--item col-xs-4">
+  <a href="/property/{{ ListingId }}">
+    <img src="{{ ImageUrl }}" alt="{{ DisplayAddress }}" />
+  </a>
+
+  <div class="availability">{{ Status }}</div>
+  <h2 class="address">{{ DisplayAddress }}</h2>
+  <p class="price">{{ Rent }} {{ RentFrequency }}</p>
+  <a class="cta cta--white" href="/property/{{ ListingId }}">View Details</a>
+</div>
