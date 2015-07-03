@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,13 +38,21 @@
           <div class="row">
           <div class="col-md-4">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#"><img src="/dist/img/logo.png" /></a></a>
+              <a class="navbar-brand" href="#"><img src="/dist/img/logo.png" alt="TAY Lettings" /></a>
             </div>
+
+            <a href="#menu" class="menu-but">
+              <div class="menu-bar"></div>
+              <div class="menu-bar"></div>
+              <div class="menu-bar"></div>
+              <span>Menu</span>
+            </a>
           </div>
 
           <div class="col-md-8">
-            <div id="navbar">
-            <nav>
+          <div id="navbar">
+            <nav id="menu">
+              <div>
               <ul class="nav navbar-nav">
                 <li class="navigation_link first"><a href="#">Home</a></li>
                 <li class="navigation_link"><a href="#about">Available Properties</a></li>
@@ -66,7 +73,6 @@
           </nav>
         </div>
         </div>
-        </div>
 
       </div>
     </div>
@@ -75,8 +81,11 @@
 
       <header class="homepage_introduction">
         <h1>Looking for a quality property in Glasgow, or are you a property owner and would like advice?</h1>
-      </header>
 
+        <div id="quick-search">
+
+        </div>
+      </header>
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -111,7 +120,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -123,7 +132,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -135,7 +144,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -151,6 +160,7 @@
       </footer>
 
     </div><!-- /.container -->
+  </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -159,29 +169,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/dist/js/bootstrap.min.js"></script>
 
+    <script src="/libraries/jQuery.mmenu/dist/js/jquery.mmenu.min.all.js" type="text/javascript"></script>
+    <link href="/libraries/jQuery.mmenu/dist/css/jquery.mmenu.all.css" type="text/css" rel="stylesheet" />
+
     <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
 
-      (function($) {
+    $(document).ready(function() {
 
-        $('.quick-enquiry').on('click', function (e) {
-          $(this).toggleClass('quick-enquiry-expanded');
-        });
+      $('.quick-enquiry').on('click', function (e) {
+        $(this).toggleClass('quick-enquiry-expanded');
+      });
 
-        $('nav#menu').mmenu({
-                offCanvas: {
-                   position  : "right"
-                   //zposition : "front"
-                }
-             });
+      // $('nav#menu').mmenu({
+      //   offCanvas: {
+      //     position : "right",
+      //     clone : true,
+      //     openingInterval: 10,
+      //     transitionDuration: 300
+      //     //zposition : "front"
+      //   }
+      //  });
 
-        var API = $("nav#menu").data("mmenu");
+      var API = $("nav#menu").data("mmenu");
 
-        $('.close-btn').bind('click', function(){
-          API.close();
-        });
+      $('.close-btn').bind('click', function (e) {
+        API.close();
+      });
 
-      })(jQuery);
+    });
+
     </script>
   </body>
 </html>
