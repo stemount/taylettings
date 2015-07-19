@@ -578,6 +578,9 @@ header.homepage_introduction h1 {
   float: right;
   font-weight: bold;
 }
+.navbar .navbar-nav {
+  float: right;
+}
 .navbar a {
   color: #808285;
 }
@@ -586,6 +589,9 @@ header.homepage_introduction h1 {
 }
 .navbar li a:hover {
   background-color: inherit;
+}
+.navbar li.last > a {
+  padding-right: 0px;
 }
 .navbar .dropdown.quick-enquiry a:link,
 .navbar .dropdown.quick-enquiry a:visited,
@@ -774,5 +780,8 @@ header.homepage_introduction h1 {
 .value_of_home_block h3,
 .value_of_home_block p {
   width: 70%;
+}
+.value_of_home_block .cta {
+  margin: 20px 0 100px 0;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */

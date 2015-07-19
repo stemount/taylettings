@@ -72,14 +72,6 @@ print_r($_GET);
                 <li class="navigation_link"><a href="#contact">Landlords</a></li>
                 <li class="navigation_link"><a href="#contact">Our Team</a></li>
                 <li class="navigation_link last"><a href="#contact">Contact</a></li>
-                <li class="dropdown quick-enquiry">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Quick Enquiry
-                  </a>
-                  <div class="dropdown-menu">
-                    Quick Enquiry Form
-                  </div>
-                </li>
               </ul>
             </div>
           </nav>
@@ -203,13 +195,13 @@ print_r($_GET);
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 text-center">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="/img/frontpage--mark-taylor.png" alt="Mark Taylor" width="140" height="140">
           <h2>Our Agents will work for you</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="cta cta--underline" href="#" role="b" href="#" role="button">Meet our team</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="/img/frontpage--extensive-properties.png" alt="Over 5000 properties in Glasgow." width="140" height="140">
           <h2>We have over 5,000 properties in Glasgow</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="cta cta--underline" href="#" role="button">See our properties</a></p>

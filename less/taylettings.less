@@ -34,6 +34,10 @@ header.homepage_introduction {
   float: right;
   font-weight: bold;
 
+  .navbar-nav {
+    float: right;
+  }
+
   a {
     color: #808285;
   }
@@ -43,6 +47,12 @@ header.homepage_introduction {
 
     a:hover {
       background-color: inherit;
+    }
+  }
+
+  li.last {
+    > a {
+      padding-right: 0px;
     }
   }
 
@@ -291,6 +301,10 @@ header.homepage_introduction {
 
   h3, p {
     width: 70%;
+  }
+
+  .cta {
+    margin: 20px 0 100px 0;
   }
 
 }

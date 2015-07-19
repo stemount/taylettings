@@ -22,15 +22,6 @@ $json = json_decode($json, true);
 
 $count = 0;
 
-// Make this 9 properties.
-// array_pop($json_a['Results']);
-
-// print_r($json_a['Results']);
-
-// foreach($json_a['Results'] as $i => $propertyInfo) {
-
-// }
-
 function displaySlide($slide) {
   // print_r($slide);
   global $twig;
